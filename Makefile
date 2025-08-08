@@ -12,4 +12,5 @@ install: zsh-syntax-highlighting.zsh zsh-autosuggestions.zsh git-prompt.sh zshrc
 	mkdir -p ~/.zsh
 	cp zsh-syntax-highlighting.zsh ~/.zsh
 	cp zsh-autosuggestions.zsh ~/.zsh
+	cp git-prompt.sh ~/.zsh
 	cp zshrc ~/.zshrc
