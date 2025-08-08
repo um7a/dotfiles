@@ -12,12 +12,12 @@ autoload -U compinit
 compinit
 
 # display auto suggestions
-source ~/.zsh/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # display commands in green when it is valid and in red when invalid.
-source ~/.zsh/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # git-prompt settings
-source ~/.zsh/git-prompt.sh
+source ~/.zsh/git/git-prompt.sh
 # GIT_PS1_SHOWDIRTYSTATE ...
 #   If set nonempty value, unstaged (*) and staged (+) changes will be shown next to the branch name.
 GIT_PS1_SHOWDIRTYSTATE=1

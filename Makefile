@@ -1,16 +1,17 @@
-zsh-syntax-highlighting.zsh:
-	curl -O https://raw.githubusercontent.com/zsh-users/zsh-syntax-highlighting/refs/tags/0.8.0/zsh-syntax-highlighting.zsh
+zsh-syntax-highlighting:
+	git clone --branch 0.8.0 https://github.com/zsh-users/zsh-syntax-highlighting.git
 
-zsh-autosuggestions.zsh:
-	curl -O https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/refs/tags/v0.7.1/zsh-autosuggestions.zsh
+zsh-autosuggestions:
+	git clone --branch v0.7.1 https://github.com/zsh-users/zsh-autosuggestions.git
 
 git-prompt.sh:
 	curl -O https://raw.githubusercontent.com/git/git/refs/tags/v2.50.1/contrib/completion/git-prompt.sh
 
 .PHONY: install
-install: zsh-syntax-highlighting.zsh zsh-autosuggestions.zsh git-prompt.sh zshrc
+install: zsh-syntax-highlighting zsh-autosuggestions git-prompt.sh zshrc
 	mkdir -p ~/.zsh
-	cp zsh-syntax-highlighting.zsh ~/.zsh
-	cp zsh-autosuggestions.zsh ~/.zsh
-	cp git-prompt.sh ~/.zsh
+	cp -r zsh-syntax-highlighting ~/.zsh
+	cp -r zsh-autosuggestions ~/.zsh
+	mkdir -p ~/.zsh/git
+	cp git-prompt.sh ~/.zsh/git
 	cp zshrc ~/.zshrc
