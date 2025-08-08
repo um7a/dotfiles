@@ -15,3 +15,9 @@ install: zsh-syntax-highlighting zsh-autosuggestions git-prompt.sh zshrc
 	mkdir -p ~/.zsh/git
 	cp git-prompt.sh ~/.zsh/git
 	cp zshrc ~/.zshrc
+
+.PHONY: clean
+clean:
+	rm -rf zsh-syntax-highlighting
+	rm -rf zsh-autosuggestions
+	rm git-prompt.sh
