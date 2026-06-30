@@ -1,0 +1,135 @@
+/* Counter reset */
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-content {
+  counter-reset: h1;
+}
+
+/* H1 */
+.markdown-rendered h1,
+.HyperMD-header-1 {
+  counter-reset: h2;
+  color: #bf616a !important;
+}
+
+.markdown-rendered h1::before,
+.HyperMD-header-1::before {
+  content: "h1 ";
+  font-size: 0.6em;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* H2 */
+.markdown-rendered h2,
+.HyperMD-header-2 {
+  counter-reset: h3;
+  color: #d08770 !important;
+}
+
+.markdown-rendered h2::before,
+.HyperMD-header-2::before {
+  content: "h2 ";
+  font-size: 0.6em;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* H3 */
+.markdown-rendered h3,
+.HyperMD-header-3 {
+  counter-reset: h4;
+  color: #ebcb8b !important;
+}
+
+.markdown-rendered h3::before,
+.HyperMD-header-3::before {
+  content: "h3 ";
+  font-size: 0.6em;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* H4 */
+.markdown-rendered h4,
+.HyperMD-header-4 {
+  counter-reset: h5;
+  color: #a3be8c !important;
+}
+
+.markdown-rendered h4::before,
+.HyperMD-header-4::before {
+  content: "h4 ";
+  font-size: 0.6em;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* H5 */
+.markdown-rendered h5,
+.HyperMD-header-5 {
+  counter-reset: h6;
+  color: #88c0d0 !important;
+}
+
+.markdown-rendered h5::before,
+
+.HyperMD-header-5::before {
+  content: "h5 ";
+  font-size: 0.6em;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* H6 */
+.markdown-rendered h6,
+.HyperMD-header-6 {
+  color: #b48ead !important;
+}
+
+.markdown-rendered h6::before,
+.HyperMD-header-6::before {
+  content: "h6 ";
+  font-size: 0.6em;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* Quote color variables */
+body {
+  --blockquote-border-color: #888888;
+  --blockquote-color: #777777;
+}
+
+/* Quote - Reading View */
+.markdown-rendered blockquote {
+  color: #777777 !important;
+  border-left: 2px solid #888888 !important;
+  background-color: rgba(128, 128, 128, 0.08);
+}
+
+/* Quote - Live Preview line */
+.markdown-source-view.mod-cm6 .cm-quote {
+  color: #777777 !important;
+  border-left-color: #888888 !important;
+}
+
+/* Quote - Live Preview whole line */
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  color: #777777 !important;
+  border-left: 1px solid #888888 !important;
+  margin-top: 16px !important;
+}
+
+/* Quote marker > */
+.markdown-source-view.mod-cm6 .cm-formatting-quote {
+  color: #888888 !important;
+}
+
+/* Inline code */
+.markdown-rendered code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  color: #a3be8c !important; /* Nord green */
+  background-color: rgba(163, 190, 140, 0.1) !important;
+  border-radius: 3px;
+  padding: 0.1em 0.25em;
+}
