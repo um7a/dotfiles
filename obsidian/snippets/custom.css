@@ -133,3 +133,18 @@ body {
   border-radius: 3px;
   padding: 0.1em 0.25em;
 }
+
+/* Bold */
+.markdown-rendered strong,
+.markdown-source-view.mod-cm6 .cm-strong {
+  color: #ff79c6 !important; /* Hot pink */
+  background-color: rgba(255, 121, 198, 0.14);
+  border-radius: 3px;
+  padding: 0.05em 0.15em;
+}
+
+/* Bold markers: ** and __ */
+.markdown-source-view.mod-cm6 .cm-formatting-strong {
+  color: #ff79c6 !important; /* Hot pink */
+  font-weight: 700;
+}

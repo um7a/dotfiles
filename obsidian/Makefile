@@ -24,8 +24,8 @@ help:
 	@echo "    install   ... Install files to DIST_DIR."
 	@echo ""
 	@echo "  EXAMPLES"
-	@echo "    make install DIST_DIR=/path/to/directory"
-	@echo "    make distclean DIST_DIR=/path/to/directory"
+	@echo "    make install DIST_DIR=/path/to/.obsidian"
+	@echo "    make distclean DIST_DIR=/path/to/.obsidian"
 	@echo ""
 
 .PHONY: install
